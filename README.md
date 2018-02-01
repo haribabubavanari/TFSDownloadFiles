@@ -3,6 +3,8 @@
 ## Purpose:
 Main idea is to find the Release artifacts for non-compiled applications. 
 
+When we do adopt Continuous Deployment with TFS, how do we define the only changed files within the release branch for non-compiled applications? The attached script will get you find and download only the files that has modified from the given release (or source control application branch) branch.
+
 ## Prerequisites
 
 *	This script is tested in on-prem TFS 2015 environment only
