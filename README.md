@@ -35,5 +35,9 @@ FindChangese.ps1 "http://TFSSERVERNAME:8080/tfs" "$/TestProject/Application1/Rel
 ```
 FindChangese.ps1 $(SYSTEM_TEAMFOUNDATIONCOLLECTIONURI) $(BUILD_SOURCESDIRECTORY) BUILD_ARTIFACTSTAGINGDIRECTORY
 ```
+
+### Screenshots
+
+
       
       
