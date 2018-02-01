@@ -39,5 +39,9 @@ FindChangese.ps1 $(SYSTEM_TEAMFOUNDATIONCOLLECTIONURI) $(BUILD_SOURCESDIRECTORY)
 ### Screenshots
 
 
+![ScreenShot](https://github.com/haribabubavanari/TFSDownloadFiles/blob/master/Example2.png)
+
+
+![ScreenShot](https://github.com/haribabubavanari/TFSDownloadFiles/blob/master/Example1.png)
       
       
