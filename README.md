@@ -35,6 +35,11 @@ FindChangese.ps1 "http://TFSSERVERNAME:8080/tfs" "$/TestProject/Application1/Rel
 ```
 
 ```
+FindChangese.ps1 $(SYSTEM.TEAMFOUNDATIONCOLLECTIONURI) $(build.sourcesDirectory) $(BUILD.ARTIFACTSTAGINGDIRECTORY)
+```
+<h3>Or</h3>
+
+```
 FindChangese.ps1 $Env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI $Env:BUILD_SOURCESDIRECTORY $Env:BUILD_ARTIFACTSTAGINGDIRECTORY
 ```
 
