@@ -34,19 +34,7 @@ When we do adopt Continuous Deployment with TFS, how do we define the only chang
 FindChangese.ps1 "http://TFSSERVERNAME:8080/tfs" "$/TestProject/Application1/Releases/Release_Branch" "D:\TFS\Drop"
 ```
 
-```
-FindChangese.ps1 $(SYSTEM.TEAMFOUNDATIONCOLLECTIONURI) $(build.sourcesDirectory) $(BUILD.ARTIFACTSTAGINGDIRECTORY)
-```
-<h3>Or</h3>
-
-```
-FindChangese.ps1 $Env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI $Env:BUILD_SOURCESDIRECTORY $Env:BUILD_ARTIFACTSTAGINGDIRECTORY
-```
-
 ### Screenshots
-
-
-![ScreenShot](https://github.com/haribabubavanari/TFSDownloadFiles/blob/master/Example2.png)
 
 
 ![ScreenShot](https://github.com/haribabubavanari/TFSDownloadFiles/blob/master/Example1.png)
