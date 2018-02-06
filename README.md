@@ -29,7 +29,7 @@ When we do adopt Continuous Deployment with TFS, how do we define the only chang
 
 4. Call the above powershell script as shown below within build script.
 
-### Example
+### Example 1
 ```
 FindChangese.ps1 "http://TFSSERVERNAME:8080/tfs" "$/TestProject/Application1/Releases/Release_Branch" "D:\TFS\Drop"
 ```
@@ -38,5 +38,18 @@ FindChangese.ps1 "http://TFSSERVERNAME:8080/tfs" "$/TestProject/Application1/Rel
 
 
 ![ScreenShot](https://github.com/haribabubavanari/TFSDownloadFiles/blob/master/Example1.png)
+      
+
+### Example 2
+You can pass predefined variables as parameters in TFS Build. Make sure your repository mapping limited to your release branch only, otherwise $(Build.SourceBranch) will result in to root level path ($\Team Project).
+
+```
+FindChangese.ps1 $(SYSTEM.TEAMFOUNDATIONCOLLECTIONURI) $(Build.SourceBranch) $(BUILD.ARTIFACTSTAGINGDIRECTORY)
+```
+
+### Screenshots
+
+
+![ScreenShot](https://github.com/haribabubavanari/TFSDownloadFiles/blob/master/Example3.png)
       
       
